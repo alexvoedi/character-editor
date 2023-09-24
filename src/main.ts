@@ -16,4 +16,8 @@ app.use(i18n)
 app.use(createPinia())
 app.use(createHead())
 
+const meta = document.createElement('meta')
+meta.name = 'naive-ui-style'
+document.head.appendChild(meta)
+
 app.mount('#app')

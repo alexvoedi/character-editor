@@ -7,6 +7,25 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AppNav: typeof import('./../components/app-nav.vue')['default']
+    NButton: typeof import('naive-ui')['NButton']
+    NCard: typeof import('naive-ui')['NCard']
+    NConfigProvider: typeof import('naive-ui')['NConfigProvider']
+    NDataTable: typeof import('naive-ui')['NDataTable']
+    NFormItem: typeof import('naive-ui')['NFormItem']
+    NH1: typeof import('naive-ui')['NH1']
+    NH3: typeof import('naive-ui')['NH3']
+    NH4: typeof import('naive-ui')['NH4']
+    NH5: typeof import('naive-ui')['NH5']
+    NIcon: typeof import('naive-ui')['NIcon']
+    NInput: typeof import('naive-ui')['NInput']
+    NInputNumber: typeof import('naive-ui')['NInputNumber']
+    NLayout: typeof import('naive-ui')['NLayout']
+    NLayoutSider: typeof import('naive-ui')['NLayoutSider']
+    NMenu: typeof import('naive-ui')['NMenu']
+    NScrollbar: typeof import('naive-ui')['NScrollbar']
+    NSelect: typeof import('naive-ui')['NSelect']
+    NSlider: typeof import('naive-ui')['NSlider']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
