@@ -21,5 +21,8 @@
   "i18n-ally.keystyle": "nested",
   "i18n-ally.localesPaths": "lang/**/*.json",
   "i18n-ally.sortKeys": true,
-  "i18n-ally.sourceLanguage": "en"
+  "i18n-ally.sourceLanguage": "en",
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///d%3A/Repositories/github.com/alexvoedi/character-editor/.github/workflows/deploy.yml"
+  }
 }
