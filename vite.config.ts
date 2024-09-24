@@ -1,12 +1,12 @@
 /// <reference types="vitest" />
 import path from 'node:path'
-import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import Components from 'unplugin-vue-components/vite'
-import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import { NaiveUiResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
+import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
-import { VueUseComponentsResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
   resolve: {
@@ -28,7 +28,7 @@ export default defineConfig({
       include: [/\.vue$/, /\.vue\?vue/],
       globalNamespaces: ['components', 'layouts'],
       dirs: ['src/components', 'src/layouts'],
-      resolvers: [VueUseComponentsResolver()],
+      resolvers: [VueUseComponentsResolver(), NaiveUiResolver()],
     }),
 
     // https://github.com/antfu/unplugin-auto-import
